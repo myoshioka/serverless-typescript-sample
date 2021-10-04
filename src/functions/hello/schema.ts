@@ -2,6 +2,7 @@ export const requestBody = {
   type: 'object',
   properties: {
     name: { type: 'string' },
+    age: { type: 'number' },
   },
-  required: ['name'],
+  required: ['name', 'age'],
 } as const
