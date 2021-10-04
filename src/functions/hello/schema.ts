@@ -1,4 +1,4 @@
-export default {
+export const requestBody = {
   type: 'object',
   properties: {
     name: { type: 'string' },
