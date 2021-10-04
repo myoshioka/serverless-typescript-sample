@@ -12,6 +12,7 @@ const hello: ValidatedEventAPIGatewayProxyEvent<typeof requestBody> = async (
   return formatJSONResponse({
     message: `Hello ${event.body.name}, welcome to the exciting Serverless world!`,
     body: event.body,
+    env: process.env.ENV,
   })
 }
 
